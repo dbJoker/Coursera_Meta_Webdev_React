@@ -3,6 +3,7 @@
 
     <head>
         <title>Petit Restaurant</title>
+        <link rel="stylesheet" href="style.css"/>
     </head>
 
     <body>
@@ -11,7 +12,7 @@
         <h2>Pizza</h2>
         <p>Peperoni, Tomates, Mozarella</p>
         <img src="pizza.jpg" width="240" height="135" alt="A pizza">
-        <h2>Spaghetti</h2>
+        <h2 id="header2Spag">Spaghetti</h2>
         <p>Sauce tomate à la viande</p>
         <img src="spaghetti.jpeg" width="240" height="135" alt="A spaghetti">
         <a href="location.html">Notre adresse</a>
@@ -36,6 +37,42 @@
                 <td>16.00$</td>
             </tr>
         </table>
+
+        <div id="DIVvsSPAN">
+            <span>
+                This is in the same line
+            </span>
+            <span>
+                <em>as this text</em>
+            </span>
+            <div>
+                But not this
+            </div>
+            <span>
+                But this again is in the same line
+            </span>
+            <span>
+                <em>as this one</em>
+            </span>
+
+        </div>
+
+        <div class="parent">
+            <div class="child">
+            </div>
+        </div>
+
+        image in div : 
+        <div class="parent">
+            <img src="pizza.jpg" class="picChild">
+            <img src="pizza.jpg" class="picChild">
+        </div>
+
+        image in div set to block : 
+        <div class="parent">
+            <img src="pizza.jpg" class="picChildBlock">
+            <img src="pizza.jpg" class="picChildBlock">
+        </div>
 
     </body>
 
